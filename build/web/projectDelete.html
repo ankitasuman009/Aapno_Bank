@@ -1,0 +1,192 @@
+ 
+<!--    Document   : projectView
+    Created on : 5 Mar, 2021, 5:24:54 PM
+    Author     : ASUS-->
+
+
+<html>
+    <head>
+    <title>Aapno Bank - Delete</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/header.css" type="text/css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        
+        
+<script type = "text/javascript" >
+document.write(location.search);
+   function preventBack(){
+       window.history.forward();
+   }
+    setTimeout("preventBack()", 0);
+    window.onunload=function(){null;};
+    
+//function myFunc() {
+//  var txt;
+//  var person = prompt("Please enter your name:", "Harry Potter");
+//  if (person != null || person != "") 
+//      document.
+//}
+
+</script>
+    </head>
+        <body class="hero-image">
+        <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+                        .hero-image {
+  background-image: url("images/bank1.jpeg");
+  background-color: #cccccc;
+  height: 650px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+            
+            #left1{
+                display: block;
+                padding: 20px;
+                color: graytext;
+                
+                /*width: 30%;*/
+            }
+            #right1{
+                width: 30%;
+            }
+            .innerright1{
+                border: 1px solid black;
+                border-radius: 5px;
+                display: block;
+                padding: 20px;
+            }
+            .innerleft1{
+                display: relative;
+                border-right: 1px solid white;
+                border-bottom: 1px solid white;
+                text-align: center;
+                font-size: 1.5rem;
+            }
+            .innerleft1:hover{
+                /*text-decoration: none;*/
+                /*border-radius: 20px;*/
+                border: 1px solid white;
+            }
+            a{
+                text-decoration : none;
+            }
+            innerleft1 a:hover{
+                text-decoration: none;
+                background-color: #fff;
+                color: #111;
+            }
+            input{
+                border: 0px gray;
+            }
+            .form_fill {
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+            }
+            #button{
+                background-color: #cc3300;
+                border-radius: 4px;
+                border: 0px;
+            }
+            #button:hover{
+                border: 2px solid black;
+            }
+            #home2 {
+    border-radius:100px;
+    border: 5px solid #fff;
+    /*width:0;*/
+    /*height:0;*/
+}
+#other2 {
+    border-radius:100px;
+    border: 5px solid transparent;
+}
+#home2:hover{
+    background-color: #fff;
+    color: #111;
+    font-family: sans-serif;
+}
+#other2:hover{
+    background-color: #fff;
+    color: #111;
+    font-family: sans-serif;
+}
+        </style>
+        <header>
+            <div class="header container-fluid tranparent">
+                <h2><sup>Aapno</sup><sub> Bank</sub></h2>
+                <p style="position:absolute; margin-top: 10px; left:100px;color: white"> - You trust therefore we are.</p>
+            
+                <ul>
+                    <li><a id="other2" href="projectHome1.html">Sign Out</a></li>
+                    <li><a id="home2" href="#" style="color: black">Data</a></li>
+                    <li><a id="other2" href="#">News</a></li>
+                    <li><a id="other2" href="projectReport.html">Report</a></li>
+                    <li><a id="other2" href="projectbank1.html">Home</a></li>
+                    
+                </ul></div>
+        </header>
+<!--        <header>
+            <div class="header container-fluid bg-dark">
+                <h2><sup>Aapno</sup><sub> Bank</sub></h2>
+                <p style="position:absolute; left:100px; color: white"> - You trust therefore we are.</p>
+            
+                <ul>
+                    <li><a href="projectHome1.html">Sign Out</a></li>
+                    <li><a href="#" class='text-info'>Data</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Report</a></li>
+                    <li><a href="projectbank1.html">Home</a></li>
+                </ul></div>
+        </header>-->
+        <div class='container-fluid'>
+            <div class='row'>
+                <div id='left1' class='col-sm-3'>
+                    <!--<form action="projectSign.jsp" method="post" name="loan">-->
+                        <div class='innerleft1'><a href='projectView.jsp' style="text-decoration : none">View Data</a></div><hr>
+                        <div class='innerleft1'><a href='#' style="text-decoration : none">Insert Data</a></div><hr>
+                        <div class='innerleft1'><a href='#' style="text-decoration : none">Update Data</a></div><hr>
+                        <div class='innerleft1'><a href='#' class='text-white' style="text-decoration : none">Delete Data</a></div><hr>
+                        <div class='innerleft1'><a href='projectApproval.jsp' style="text-decoration : none">Approval</a></div><hr>
+                        <div class='innerleft1'><a href='#' style="text-decoration : none">Send Mails</a></div><hr>         
+                </div>
+                <div id='right1' class='col-sm-9' style="margin-top: 10px">
+                    <form action="projectSign.jsp" method="post" name="btn1">
+                    <div class='row'>
+                        <div class='container innerright1' style='background-color: #ffcc99'>
+                            <p>Delete applicant data by Loan ID</p>
+                            <p style="float:right"><label>Enter loan ID: </label>
+                                <input type='text' name='loan_id' placeholder="LP00" value=""><br />
+                                <input id="button" type='submit' name='btnid'  value="Delete"></p>
+                        </div>
+                    </div>
+                    <br />
+                    <div class='row'>
+                        <div class='container innerright1' style='background-color: #ffcc99'>
+                            <p>Delete applicant data by Email ID</p>
+                            <p style="float:right"><label>Enter Email ID: </label>
+                                <input type='email' class="form_fill"  name='email_id' placeholder='xyz@gmail.com'><br />
+                                <input id="button" type='submit' name='btnemail'  value="Delete"></p>
+                        </div>
+                    </div>
+                    <br />
+                    <div class='row'>
+                        <div class='container innerright1' style='background-color: #ffcc99'>
+                            <p>Delete all applicants' data</p>
+                            <p style="float:right">
+                                <input id="button" type='submit' name='delete' value="Delete all"></p>
+                        </div>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+    </body>
+</html>

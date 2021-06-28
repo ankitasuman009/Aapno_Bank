@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Aapno Bank - Apply for Loan</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <link rel="stylesheet" href="css/header.css" type="text/css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        
+<script type = "text/javascript" >
+   function preventBack(){window.history.forward();}
+    setTimeout("preventBack()", 0);
+    window.onunload=function(){null};
+    
+    
+var myWindow;
+
+function openWin() {
+  myWindow = window.open("terms.html", "", "width=500, height=500, toolbar=yes, scrollbars=yes, resizable=yes, top=450, left=450");
+}
+  
+</script>
+    </head>
+    <body>
+        <div  id="loanheader" class="header container-fluid">
+        <header>
+            <h2><sup>Aapno</sup><sub> Bank</sub></h2>
+            <p style="position:absolute; left:100px;color: white"> - You trust therefore we are.</p>
+            <ul>
+                    <li><a id="other" href="projectHome1.html">Sign Out</a></li>
+                    <li><a id="other" href="projectAbout.html">About Us</a></li>
+                    <li><a id="other" href="projectContact.html">Contact Us</a></li>
+                    <li><a id="home" href="#" class=''>Loan</a></li>
+                    <li><a id="other" href="projectHome2.html" >Home</a></li>
+        </header>
+        </div>
+        <div id="main" class="container-fluid">
+            <div class="row">
+                <div id="leftside" class="col-sm-6">
+                    <img src="images/Screenshot_20210115-234048.png" alt="ME" class="">
+                </div>
+                <div id="rightside" class="col-sm-6">
+                    <center><h4>Loan Applicant Form</h4></center>
+                    <div  id="asterik" class="text-left"><span>*</span>Required Fields</div>
+                    <form action="projectSign.jsp" method="post" name="loan">
+                        <div class="form__group"><label for="name" class="form__label">Name<span id="asterik">*</span></label>
+                            <input type="text" class="form__field" name="name" id='name'>
+                        </div>
+                            
+                        <div class="form__group"><label for="fname" class="form__label">Father's Name</label>
+                            <input type='text' class="form__field" name="fname" id='fname' size="38">
+                        </div>
+            
+                        <div class="form__group"><label for="address" class="form__label">Address:</label>
+                            <input type='text' class="form__field" name="address" id='address'>
+                        </div>
+            
+                        <div class="form__group"><label for="pincode" class="form__label">Pin-Code:</label>
+                            <input type='number' class="form__field" name="pincode" id='pincode' size="10" onKeyPress="if(this.value.length==6) return false;">
+                        </div>
+            
+                        <div class="form__group"><label for="city" class="form__label">City: </label>
+                            <input type='text' class="form__field" name="city" id='city' size="38">
+                        </div>
+            
+                        <div class="form__group"><label for="state" class="form__label">State: </label>
+                            <input type='text' class="form__field" name="state:" id='state:' size="38">
+                        </div>
+            
+                        <div class="form__group"><label class="form__select" for="gender">Gender: <span id="asterik">*</span></label>
+                            <input type="radio" id="male" name="gender" value="Male">
+                            <label style="font-size: small" for="male">Male</label>
+                            
+                            <input type="radio" id="female" name="gender" value="Female">
+                            <label style="font-size: small" for="female">Female</label>
+
+                        </div>
+            
+                        <div class="form__group"><label class="form__select">Qualification: <span id="asterik">*</span></label> &nbsp;
+                            <select class="form__field" name="qualification" id="qualification">
+                                <option value=" "></option>
+                                <option value="Not Graduate">Undergraduate</option>
+                                <option value="Graduate">Graduate</option>
+                                <option value="Working">Working</option>
+                                <option value="Unemployed">Unemployed</option>
+                            </select>
+                        </div>
+                            
+                        <div class="form__group"><label class="form__select" for="marital">Marital Status: <span id="asterik">*</span></label>
+                            <p><input type="radio" id="unmarried" name="marital" value="No">
+                                <label style="font-size: small" for="unmarried">Unmarried</label></p>
+                            <p><input type="radio" id="married" name="marital" value="Yes">
+                                <label style="font-size: small" for="married">Married</label></p>
+                        </div>
+                        
+                        <div class="form__group"><label class="form__select">No. of Dependents: <span id="asterik">*</span></label>
+                            <select class="form__field" name="dependents" id="dependents">
+                                <option value=" "></option>
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3+">3+</option>
+                            </select>
+                        </div>
+                            
+                        <div class="form__group"><label class="form__select" for="self-employed">Self-Employed: <span id="asterik">*</span></label>
+                            <input type="radio" id="self-employed" name="self_dependent" value="Yes">
+                            <label style="font-size: small" for="self-employed">Yes</label>
+                            <input type="radio" id="self-employed" name="self_dependent" value="No">
+                            <label style="font-size: small" for="self-employed">No</label>
+                        </div> 
+            
+                        <div class="form__group"><label for="income" class="form__label">Applicant Income: <span id="asterik">*</span></label>
+                            <input type="text" class="form__field" name="income" placeholder="annual in dollars">
+                        </div>
+            
+                        <div class="form__group"><label for="coincome" class="form__label">Co-Applicant Income: <span id="asterik">*</span></label>
+                            <input type="text" class="form__field" name="coincome" placeholder="annual in dollars">
+                        </div>
+                        
+                        <div class="form__group"><label for="loanamt" class="form__label">Loan Amount: <span id="asterik">*</span></label>
+                            <input type="text" class="form__field" name="loanamt" placeholder="in dollars">
+                        </div>
+            
+                        <div class="form__group"><label for="loanterms" class="form__label">Loan Amount Terms: <span id="asterik">*</span></label>
+                            <input type="text" class="form__field" name="loanterms" placeholder="pm in dollars">
+                        </div>
+            
+                        <div class="form__group"><label for="credit" class="form__label">Credit History: <span id="asterik">*</span></label>
+                            <input type="number" class="form__field" name="credit">
+                        </div>
+            
+                        <div class="form__group"><label class="form__select">Property Area: <span id="asterik">*</span></label>
+                            <select class="form__field" name="propertyarea" id="propertyarea">
+                                <option value=" "></option>
+                                <option value="Urban">Urban</option>
+                                <option value="Semiurban">Semiurban</option>
+                                <option value="Rural">Rural</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form__group"><label class="form__label text-left">Email ID:<span id="asterik">*</span></label>
+                            <input type='text' class="form__field" name="emailid" id='email_error' required>
+                        </div>
+                
+                        <input type='checkbox' checked required><span> I agreed all the <a href="" onclick="openWin(); return false;" style="text-decoration: none">terms and conditions</a> applied.</span>
+                        <br /><br /><center><input id="apply_now" type="submit" class="loan" name="Apply" value="Apply" style="font-size: 28px;"></center>
+                    </form>
+                </div>
+            </div>
+        </div>
+</body>
+</html>

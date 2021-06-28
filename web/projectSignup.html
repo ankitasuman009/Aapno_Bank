@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+
+<!--To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.-->
+
+
+
+
+
+<html>
+    <head>
+        <title>Aapno Bank - Sign Up</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <link rel="stylesheet" href="css/header.css" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        
+        <script>
+            function myFunction() {
+  var x = document.getElementById("pwd");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+        </script>     
+    </head>
+    
+   
+<body>
+    <style>
+        #other {
+            border-radius:100px;
+            border: 10px solid transparent;
+        }
+        #other:hover{
+            background-color: #fff;
+            color: #111;
+            font-family: cursive;
+        }
+        .account {
+            border-radius: 5em;
+            color: #fff;
+            /*background: linear-gradient(to right, #9C27B0, #E040FB);*/
+            border: 0;
+            background-color: #111;
+            padding-left: 40px;
+            padding-right: 40px;
+            padding-bottom: 10px;
+            padding-top: 10px;
+            font-family: sans-serif;
+            margin-left: 35%;
+            font-size: 13px;
+        }
+        
+    </style>     
+        <header>
+            <div id="loanheader" class="header container-fluid" style="background-color: #111;">
+                <h2><sup>Aapno</sup><sub> Bank</sub></h2>
+                <p style="position:absolute; left:100px;color: white"> - You trust therefore we are.</p>
+                
+            <ul>
+                <li><a id='other' href="projectLogin.html">Log In</a></li>
+                <li><a id='other' href="projectHome1.html">Back</a></li>
+            </ul></div>
+        </header>
+    <!--    <script type="text/javascript">
+    function validateForm() {
+ var error = 0;
+    var a = document.forms["signup"]["name"].value;
+    document.getElementById('name_error').innerHTML = '';
+    if (a == null || a == "") {
+//         alert("Name must be filled out");
+        error++;
+        document.getElementById('name_error').innerHTML = 'Name must be filled out';
+    }
+
+    var b = document.forms["signup"]["email"].value;
+    document.getElementById('email_error').innerHTML = '';
+    if (b == null || b == "") {
+        // alert("Email must be filled out");
+        error++;
+        document.getElementById('email_error').innerHTML = 'Email must be filled out';
+    }
+
+    var c = document.forms["signup"]["fname"].value;
+    document.getElementById('fname_error').innerHTML = '';
+    if (c == null || c == "") {
+        // alert("Username must be filled out");
+        error++;
+        document.getElementById('fname_error').innerHTML = 'Username must be filled out';
+    }
+
+    var d = document.forms["signup"]["password"].value;
+    document.getElementById('password_error').innerHTML = '';
+    if (d == null || d == "") {
+        // alert("Password must be filled out");
+        error++;
+        document.getElementById('password_error').innerHTML = 'Password must be filled out';
+    }
+
+    var e = document.forms["signup"]["address"].value;
+    document.getElementById('address_error').innerHTML = '';
+    if (e == null || e == "") {
+        // alert("Roll no must be filled out");
+        error++;
+        document.getElementById('address_error').innerHTML = 'Roll no must be filled out';
+    }
+
+    if(error>0) {
+        return false;
+    }
+    return true;
+}
+</script>-->
+        
+<!--            <div class="container"><div class="row">
+                    <div id="sideimage" class="col-sm-6 fixed ">
+                        <div style="background-image: url('images/IMG_20190702_175944234.jpg');">
+                        <img class="center" src="images/IMG_20190702_175944234.jpg">
+                        </div>
+                </div>
+                
+                
+        <div class="col-sm-12 top3 lead">
+            
+                <div id="aapnotitle" class="text-center">Welcome to Aapno Bank</div>
+            <div class="top4">-->
+
+        <div id="main" class="container-fluid">
+            <div class="row">
+                <div id="leftside" class="col-sm-6">
+                    <img src="images/Screenshot_20210115-234048.png" alt="ME" class="">
+                </div>
+                <div id="rightside" class="col-sm-6">
+                    <div id="aapnotitle" class="text-center">Welcome to Aapno Bank</div>
+                    <br />
+                    
+                <div id="require" class="text-left"><span id="asterik">*</span>Required</div>
+                <form action="projectSign.jsp" name="signup" method="post">
+                <div class="form__group"><label for="name" class="form__label">Name<span id="asterik">*</span></label>
+                    <input type="text" class="form__field" name="name" id='name_error' required></div>
+                
+                <div class="form__group"><label for="fname" class="form__label">Father's Name<span id="asterik">*</span></label>
+                    <input type='text' class="form__field" name="fname" id='fname_error'  required></div>
+            
+                <div class="form__group"><label for="address" class="form__label">Address:<span id="asterik">*</span></label>
+                    <input type='text' class="form__field" name="address" id='address_error' required></div>
+            
+                <div class="form__group"><label for="pincode" class="form__label">Pin-Code:<span id="asterik">*</span></label>
+                    <input type='number' class="form__field" name="pincode" id='pincode_error' required onKeyPress="if(this.value.length==6) return false;"></div>
+            
+                <div class="form__group"><label for="city" class="form__label">City:</label>
+                    <input type='text' class="form__field" name="city" id='city_error' required></div>
+            
+                <div class="form__group"><label for="state" class="form__label">State:<span id="asterik">*</span></label>
+                    <input type='text' class="form__field" name="state" id='state_error' required></div>
+            
+                <div class="form__group"><label for="phnno" class="form__label">Phone No.<span id="asterik">*</span></label>
+                    <input type='text' class="form__field" name="phnno" id='phn_error' required></div>
+            
+                <div class="form__group"><label class="form__label">Email ID:<span id="asterik">*</span></label>
+                    <input type='text' class="form__field" name="emailid" id='email_error' required></div>
+                <div class="form__group"><label class="form__label">Password<span id="asterik">*</span></label>
+                    <input type='password' class="form__field" name="password" id='pwd' required>
+                    <input type="checkbox" onclick="myFunction()"> Show Password</div>
+                <br /><br />
+            
+                <center><input type='submit' class="account" name="signup" value='Create Account'></center>
+            </form></div></div></div>
+                
+    </body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    </head>
+    <body>
+        <style>
+            html, body{
+                height: 100%;
+            }
+            body{
+                background-color: #15202B;
+                margin: 0;
+                display: block;
+            }
+            #leftside{
+    display: flex ;
+    overflow: auto;
+    background-color: black;
+    position: fixed;
+    justify-content: center;
+    /*background: 100% 100%;*/
+    /*border: 2px solid black;*/
+/*    min-height: 100%;
+    max-height: 100%;*/
+    width: 50%;
+    /*top: 30px;*/ 
+    right: 0;
+    left: 0;
+            }
+            #rightside{
+                /*background-image: 'images/IMG-20200608-WA0017.jpg';*/
+                
+    position: relative;
+    /*border: 1px solid white;*/
+    margin-left: 50%;
+    align-items: center;
+    padding: 30px;
+    overflow-y: auto;
+    width: 50%;
+    height: 100%;
+    text-decoration: white;
+                
+            }
+            .innerright{
+                display: block;
+                padding: 20px;
+                width: 100%;
+                /*border: 1px solid black;*/
+                margin-top: 20px;
+            }
+            #heading{
+                font-size: 65px;
+                line-height: 65px;
+                letter-spacing: -1.2px;
+                font-weight: 700;
+                font-family: Chirp, Verdana, System;
+                overflow-wrap: break-word;
+                color: white;
+                margin-bottom: 48px;
+                margin-top: 48px;
+            }
+            .innerhead{
+                font-family: inherit;
+                overflow-wrap: break-word;
+                border: 0 solid black;
+                box-sizing: border-box;
+            }
+            .rt2{
+                flex-direction: row;
+            }
+            a{
+                cursor: pointer;
+                background-color: rgb(29, 161, 242);
+                min-height: 48px;
+                margin-right: 20px;
+                max-width: 400px;
+                margin-bottom: 20px;
+                height: 0;
+                padding-left: 32px;
+                padding-right: 32px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                border-color: white;
+                border-radius: 9999px;
+                text-decoration: none;
+               align-items: stretch;
+               pointer-events: auto;
+               flex: 1;
+               display: flex;
+               flex-direction: column;
+               text-align: center;
+               font-weight: bold;
+               
+            }
+            a:hover{
+                cursor: pointer;
+                color: activeborder;
+                text-decoration: none;
+            }
+            #login{
+                background-color: #15202B;
+                border: 1px solid rgb(29, 161, 242);
+            }
+        </style>
+        <div id="main" class="container-fluid">
+            <div class="row">
+                <div id="leftside" class="col-sm-6">
+                    <img src="images/twitter.png" alt="ME" class="">
+                </div>
+                <div id="rightside" class="col-sm-6">
+                    <div class='innerright'>
+                    <div id='heading'>
+                        <span class="innerhead">Happening now</span></div>
+                        <div id='heading'>
+                            <span class="innerhead" style='font-size: 30px'>Join Twitter today.</span>
+                        </div>
+                        <div class='rt2'>
+                            <a href="">
+                                <span style="font-size: 15px; color: white; ">Sign up</span>
+                            </a>
+                            <a id='login' href="https://twitter.com/abcd03107552">
+                                <span style="font-size: 15px; color: rgb(29, 161, 242); ">Log in</span>
+                            </a>
+                        </div>
+                
+                    </div>
+                    </div>
+                </div>
+            </div>
+    </body>
+</html>

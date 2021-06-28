@@ -1,0 +1,252 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 13 Jan, 2021, 1:19:32 AM
+    Author     : ASUS
+*/
+/*html {
+    position: fixed;
+    overflow: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: silver;
+}
+body {
+    height: 100%;
+    margin: 0;
+    overflow: auto;
+    background: aqua;
+}*/
+/*
+*/html, body {
+    /*display: table;*/
+    overflow: auto;
+    margin: auto;
+}
+body.bodycls{
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    max-width: 600px;
+    width: 600px;
+    position: relative;
+}
+/*div.top{
+    position: static;
+    display: block;
+    border: 1px solid white;
+    font: inherit;
+    background-color: azure;
+  max-width: 50%;
+  margin: auto;
+    margin-top: 2.3rem;
+    padding: 2rem 0;
+}*/
+#aapnotitle{
+    position: static;
+    font: inherit;
+    font-size: 30px;
+    display: block;
+    border: 1px solid black;
+    padding: 10px;
+    margin-left: 10px;
+/*  max-width: 60%;
+  margin: auto;
+    margin-top: 40px;
+    padding: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    letter-spacing: 1.5px;
+    align-self: center;*/
+}
+#aapnotitle2{
+    position: static;
+    font: inherit;
+    font-size: 30px;
+    display: block;
+    border: 1px solid black;
+    margin: 0 50px;
+/*    margin-left: 50px;
+    margin-right: 50px;*/
+/*    margin-left: 10px;
+  max-width: 60%;
+  margin: auto;
+    padding: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    letter-spacing: 1.5px;
+    align-self: center;*/
+    
+}
+/*div.top2{
+    position: static;
+    font: inherit;
+    font-size: 30px;
+    margin-top: 40px;
+    padding: 10px;
+    letter-spacing: 1.5px;
+    align-self: center;
+}*/
+#main{
+    margin-top: 10%;
+    /*padding-top: 5%;*/
+}
+#leftside{
+    display: flex ;
+    overflow: auto;
+    background-color: black;
+    position: fixed;
+    border: 2px solid black;
+    min-height: 100%;
+    max-height: 100%;
+    width: 50%;
+    top: 30px; 
+    right: 0;
+    left: 0;
+    /*float: left;*/
+}
+#rightside{
+    position: relative;
+    border: 2px solid white;
+    margin-left: 50%;
+    
+    padding: 30px;
+    overflow-y: auto;
+    width: 50%;
+    height: 100%;
+    
+    background-color: activeborder;
+}
+/*div.top3{
+    width: 50px;
+    block-size: 150px;
+    display: block;
+    border: 1px solid black;
+    font: inherit;
+  margin: 0;
+  padding: 2rem;
+    float: right;
+    background-color: azure;
+    text-align: left;
+    float: left;
+  position: relative;
+  overflow-y: scroll;
+    background-attachment: scroll;
+  overflow: auto;
+}*/
+
+/*div.top4{
+    
+    float: center;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: azure;
+    font: inherit;
+    width: 45%;
+  max-width: 90%;
+  margin: auto;
+  position: relative;
+      border: 2px solid black;
+     letter-spacing: 1.5px;
+    text-align: left;
+    
+}*/
+
+.form__group{
+  position: relative;
+  padding: 15px;
+  margin-top: 10px;
+  width: 88%;
+  color: gray;
+}
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  width: 88%;
+  color: gray;
+}
+.form__select{
+  color: gray;
+   top: 0;
+  margin-bottom: 10px; 
+}
+.form__field {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid gray;
+  outline: 0;
+  font-size: 1.0rem;
+  color: black;
+  margin-bottom: 10px;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+  ::placeholder {
+    color: gray;
+    font-size: 0.6rem;
+    cursor: text;
+  }
+
+  :placeholder-shown ~ .form__label {
+      top: 20px;
+  }
+
+
+ img {
+    page-break-inside: avoid;
+  }
+  img {
+    max-width: 100% !important;
+  }
+  
+  .account, .loan {
+        border-radius: 5em;
+        color: #fff;
+        /*background: linear-gradient(to right, #9C27B0, #E040FB);*/
+        border: 0;
+        background-color: #111;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        font-family: sans-serif;
+        margin-left: 35%;
+        font-size: 13px;
+       
+    }
+/*    
+    .account:hover, .loan:hover{
+        color: white;
+        text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
+    }*/
+
+
+
+            #apply_now{
+                font: caption;
+                font-size: 2.1rem;
+                padding: 10px;
+                border-radius: 15px;
+                border: 2px solid black;
+                background-color: black;
+                color: white;
+                text-decoration: none;
+                font-family: cursive;
+            }
+            #apply_now:hover{
+                border-radius: 40px;
+                background-color: rosybrown;
+                color: #111;
+                font-family: cursive;
+                border: 2px solid white;
+            }
